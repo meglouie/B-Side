@@ -3,14 +3,14 @@
 <head>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: Arial, Helvetica, sans-serif;
             background-color:  #F5EFEB;
             margin: 0;
             padding: 0;
         }
         header {
-            background-color: #F5EFEB;
-            color: #2F4156;
+            background-color:  #2F4156;
+            color: #F5EFEB ;
             padding: 1rem;
             text-align: center;
         }
@@ -22,5 +22,23 @@
 <body>
     <header>
         <h1>B-Side</h1>
+        <!-- Tab links -->
+    <div class="tab">
+        <button class="tablinks" onclick="openTab(event, 'Home')">Home</button>
+        <button class="tablinks" onclick="openTab(event, 'About')">About</button>
+        <button class="tablinks" onclick="openTab(event, 'Albums')">Albums</button>
+        <button class="tablinks" onclick="openTab(event, 'Artists')">Artists</button>
+        <button class="tablinks" onclick="openTab(event, 'Groups')">Groups</button>
+        <button class="tablinks" onclick="openTab(event, 'Discussion')">Discussion</button>
+    </div>
+    <!-- Tab content -->
+    <div id="Home" class="tabcontent">
+        
     </header>
     <main>
+        <p style="text-align: center;">Welcome to the B-Side! Feel free to discuss your favorite albums and artists! Join groups to connect with other music lovers!</p>
+    </main>
+   
+
+</body>
+</html>
