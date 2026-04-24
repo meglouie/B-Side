@@ -1,80 +1,140 @@
-<!DOCTYPE html>
-<html lang="en">   
-    <head>
-        <style>
-            body {
-            font-family: Arial, Helvetica, sans-serif;
-            background-color:  #F5EFEB;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color:  #2F4156;
-            color: #F5EFEB ;
-            padding: 1rem;
-            text-align: center;
-        }
-        main {
-            padding: 1rem;
-        }
-        .tablinks {
-            background-color:#C8D9E3;
-            border-radius: 999px;
-            justify-content: center;
-            align-items: center;
-            padding: 0.5rem 1rem;
-            margin: 0.5rem;
-            transform: scale(1.05);
-            color: #2F4156;
-        }
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bpmf+Huninn&family=Inconsolata:wght@200..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Home</h1>
+      <div class="tab">
+        <a href="home.html">
+          <button class="tablinks" onclick="openTab(event, 'Home')">
+            Home
+          </button>
+        </a>
+        <a href="about.html">
+          <button class="tablinks" onclick="openTab(event, 'About')">
+            About
+          </button>
+        </a>
+        <a href="albums.html">
+          <button class="tablinks" onclick="openTab(event, 'Albums')">
+            Albums
+          </button>
+        </a>
+        <a href="artists.html">
+          <button class="tablinks" onclick="openTab(event, 'Artists')">
+            Artists
+          </button>
+        </a>
+        <a href="groups.html">
+          <button class="tablinks" onclick="openTab(event, 'Groups')">
+            Groups
+          </button>
+        </a>
+        <a href="discussion.html">
+          <button class="tablinks" onclick="openTab(event, 'Discussion')">
+            Discussion
+          </button>
+        </a>
+      </div>
+    </header>
+    <main>
+      <h2 style="text-align: center">Welcome to B-Side!</h2>
+      <p style="text-align: center">
+        Feel free to discuss your favorite albums and artists! Join groups to
+        connect with other music lovers!
+      </p>
+      <p style="text-align: center">
+        Click on the tabs above to explore our collection of albums, artists,
+        and groups!
+      </p>
+    </main>
 
-
-        </style>
-
-    </head>
-    <body>
-        <header>
-            <h1>Home</h1>
-            <div class="tab">
-             <a href="home.html">
-                <button class="tablinks" onclick="openTab(event, 'Home')">
-                    Home
-                </button>
-            </a>
-             <a href="about.html">
-                <button class="tablinks" onclick="openTab(event, 'About')">
-                    About
-                </button>
-            </a>
-            <a href="albums.html">
-                <button class="tablinks" onclick="openTab(event, 'Albums')">
-                    Albums
-                </button>
-            </a>
-            <a href="artists.html">
-                <button class="tablinks" onclick="openTab(event, 'Artists')">
-                    Artists
-                </button>
-            </a>
-            <a href="groups.html">
-                <button class="tablinks" onclick="openTab(event, 'Groups')">
-                    Groups
-                </button>
-            </a>
-            <a href="discussion.html">
-                <button class="tablinks" onclick="openTab(event, 'Discussion')">
-                    Discussion
-                </button>
-            </a>
+    <!-- Albums -->
+    <section class="features">
+      <div class="content">
+        <div class="text">
+          <h2>Albums</h2>
+          <p>
+            Not sure what to listen to next? Our community-curated charts
+            surface the albums that people keep coming back to: rated, reviewed,
+            and recommended by real listeners just like you. No algorithms, no
+            sponsored placements, just music that people genuinely love.
+          </p>
         </div>
-        </header>
-        <main>
-            <h2 style="text-align: center;">Welcome to B-Side!</h2>
-            <p style="text-align: center;">Feel free to discuss your favorite albums and artists!
-            Join groups to connect with other music lovers!</p>
-        <p style="text-align: center;">Click on the tabs above to explore our collection of albums, artists, and groups!</p>
-        </main>
-    </body>
 
+        <div class="image">
+          <img src="images/albums.jpg" alt="Albums" />
+        </div>
+      </div>
+    </section>
 
+    <hr />
+
+    <!-- Artists -->
+    <section class="features">
+      <div class="content">
+        <div class="text">
+          <h2>Artists</h2>
+          <p>
+            Your next obsession is probably already someone's favorite here.
+            Browse the artists our members keep coming back to, the ones worth
+            staying up late for, reading every interview about, and shoving into
+            every playlist you make for your friends.
+          </p>
+        </div>
+
+        <div class="image">
+          <img src="images/artists.jpg" alt="Artists" />
+        </div>
+      </div>
+    </section>
+
+    <hr />
+
+    <!-- Groups -->
+    <section class="features">
+      <div class="content">
+        <div class="text">
+          <h2>Groups</h2>
+          <p>
+            Find your people. Join groups built around the artists, genres, and
+            albums you actually care about, and talk about music with the people
+            who get it the same way you do.
+          </p>
+        </div>
+
+        <div class="image">
+          <img src="images/groups.jpg" alt="Groups" />
+        </div>
+      </div>
+    </section>
+
+    <hr />
+
+    <!-- Discussion -->
+    <section class="features">
+      <div class="content">
+        <div class="text">
+          <h2>Discussion</h2>
+          <p>
+            Hot takes, deep cuts, album rankings nobody asked for but everyone
+            needs. This is where the real music conversations happen. Pull up a
+            chair and say something.
+          </p>
+        </div>
+
+        <div class="image">
+          <img src="images/discussion.jpg" alt="Discussion" />
+        </div>
+      </div>
+    </section>
+  </body>
 </html>
