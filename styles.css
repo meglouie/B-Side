@@ -15,6 +15,46 @@ header {
 
 main {
   padding: 1rem;
+  line-height: 1.6;
+}
+
+.about-intro {
+  max-width: 1000px;
+  margin: 1.5rem auto 0;
+  padding: 0 1rem;
+  padding-bottom: 1.25rem;
+}
+
+.about-hero-card {
+  background: linear-gradient(135deg, #f5efeb 0%, #ffe1e6 100%);
+  border: 2px solid #2f4156;
+  border-radius: 18px;
+  padding: 1.5rem;
+  box-shadow: 0 8px 20px rgba(47, 65, 86, 0.15);
+}
+
+.about-kicker {
+  margin: 0;
+  font-family: "Bpmf Huninn", sans-serif;
+  color: #567c8d;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+.about-hero-card h2,
+.about-team-intro h2 {
+  text-align: center;
+  color: #2f4156;
+  margin-top: 0.6rem;
+}
+
+.about-team-intro {
+  margin-top: 1.25rem;
+  padding: 1rem 1.25rem;
+  background-color: #f5efeb;
+  border-left: 6px solid #567c8d;
+  border-radius: 12px;
 }
 
 .tablinks {
@@ -57,7 +97,7 @@ main {
 }
 
 .text h2 {
-  color: black;
+  color: #2f4156;
 }
 
 .image {
