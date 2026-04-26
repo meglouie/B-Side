@@ -31,6 +31,7 @@ main {
   border-radius: 18px;
   padding: 1.5rem;
   box-shadow: 0 8px 20px rgba(47, 65, 86, 0.15);
+  margin-bottom: 2rem;
 }
 
 .about-kicker {
@@ -135,4 +136,5 @@ hr {
   border-radius: 18px;
   padding: 1.5rem;
   box-shadow: 0 8px 20px rgba(47, 65, 86, 0.15);  
+  border-radius: 12px;
 }
