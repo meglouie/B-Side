@@ -127,3 +127,12 @@ hr {
 .section-title h1 {
   color: #2f4156;
 }
+
+.about-artists{
+  background: linear-gradient(135deg, #f5efeb 0%, #ffe1e6 100%);
+  border: 2px solid #2f4156;
+  padding: 1rem 1.25rem;
+  border-radius: 18px;
+  padding: 1.5rem;
+  box-shadow: 0 8px 20px rgba(47, 65, 86, 0.15);  
+}

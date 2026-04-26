@@ -1,49 +1,84 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bpmf+Huninn&family=Inconsolata:wght@200..900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <header>
-      <h1>Artists</h1>
-      <div class="tab">
-        <a href="home.html">
-          <button class="tablinks" onclick="openTab(event, 'Home')">
-            Home
-          </button>
-        </a>
-        <a href="about.html">
-          <button class="tablinks" onclick="openTab(event, 'About')">
-            About
-          </button>
-        </a>
-        <a href="albums.html">
-          <button class="tablinks" onclick="openTab(event, 'Albums')">
-            Albums
-          </button>
-        </a>
-        <a href="artists.html">
-          <button class="tablinks" onclick="openTab(event, 'Artists')">
-            Artists
-          </button>
-        </a>
-        <a href="groups.html">
-          <button class="tablinks" onclick="openTab(event, 'Groups')">
-            Groups
-          </button>
-        </a>
-        <a href="discussion.html">
-          <button class="tablinks" onclick="openTab(event, 'Discussion')">
-            Discussion
-          </button>
-        </a>
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bpmf+Huninn&family=Inconsolata:wght@200..900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header>
+    <h1>Artists</h1>
+    <div class="tab">
+      <a href="home.html">
+        <button class="tablinks" onclick="openTab(event, 'Home')">
+          Home
+        </button>
+      </a>
+      <a href="about.html">
+        <button class="tablinks" onclick="openTab(event, 'About')">
+          About
+        </button>
+      </a>
+      <a href="albums.html">
+        <button class="tablinks" onclick="openTab(event, 'Albums')">
+          Albums
+        </button>
+      </a>
+      <a href="artists.html">
+        <button class="tablinks" onclick="openTab(event, 'Artists')">
+          Artists
+        </button>
+      </a>
+      <a href="groups.html">
+        <button class="tablinks" onclick="openTab(event, 'Groups')">
+          Groups
+        </button>
+      </a>
+      <a href="discussion.html">
+        <button class="tablinks" onclick="openTab(event, 'Discussion')">
+          Discussion
+        </button>
+      </a>
+    </div>
+  </header>
+  <main class="artists-intro">
+    <section class="about-hero-card">
+      <p class="about-kicker">For Music Lovers, By Music Lovers</p>
+      <h2>Artists</h2>
+      <p>
+        Explore our community's favorit artists, share your own favorites,
+        and discover new music together.
+        Whether you're into classic rock, indie pop, R&B, or other genres,
+        our artist section is the perfect place to connect with fellow music lovers
+        and find your next favorite artist.
+      </p>
+    </section>
+
+    <section class="about-team-intro">
+      <h3>Featured Artists</h3>
+      <p>
+        Check out some of the most popular artists in our community!
+      </p>
+      <div>
+        <iframe data-testid="embed-iframe" style="border-radius:12px"
+          src="https://open.spotify.com/embed/artist/6TDH7ncjLQmNKM1SdbggnZ?utm_source=generator" width="100%"
+          height="152" frameBorder="0" allowfullscreen=""
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
       </div>
-    </header>
-  </body>
+      <div>
+        <iframe data-testid="embed-iframe" style="border-radius:12px"
+          src="https://open.spotify.com/embed/artist/3sHvvFIzt6FKUQuksXhZn3?utm_source=generator" width="100%"
+          height="152" frameBorder="0" allowfullscreen=""
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      </div>
+
+    </section>
+
+  </main>
+</body>
+
 </html>
