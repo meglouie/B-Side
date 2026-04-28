@@ -1,131 +1,225 @@
 <!doctype html>
 <html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bpmf+Huninn&family=Inconsolata:wght@200..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-<head>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Bpmf+Huninn&family=Inconsolata:wght@200..900&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
-</head>
+  <body>
+    <header>
+      <h1>Albums</h1>
+      <div class="tab">
+        <a href="home.html">
+          <button class="tablinks" onclick="openTab(event, 'Home')">
+            Home
+          </button>
+        </a>
+        <a href="about.html">
+          <button class="tablinks" onclick="openTab(event, 'About')">
+            About
+          </button>
+        </a>
+        <a href="albums.html">
+          <button class="tablinks" onclick="openTab(event, 'Albums')">
+            Albums
+          </button>
+        </a>
+        <a href="artists.html">
+          <button class="tablinks" onclick="openTab(event, 'Artists')">
+            Artists
+          </button>
+        </a>
+        <a href="groups.html">
+          <button class="tablinks" onclick="openTab(event, 'Groups')">
+            Groups
+          </button>
+        </a>
+        <a href="discussion.html">
+          <button class="tablinks" onclick="openTab(event, 'Discussion')">
+            Discussion
+          </button>
+        </a>
+      </div>
+    </header>
+    <main class="about-intro">
+      <section class="about-hero-card">
+        <p class="about-kicker">Discover Your Next Favorite Album</p>
+        <h2>Explore Albums Loved by the Community</h2>
+        <p>
+          Dive into a curated selection of albums that have captured the hearts
+          of our community members. Whether you're looking for timeless classics
+          or hidden gems, our album section is your gateway to musical
+          discovery. Explore, listen, and find your next favorite album today!
+        </p>
 
-<body>
-  <header>
-    <h1>Albums</h1>
-    <div class="tab">
-      <a href="home.html">
-        <button class="tablinks" onclick="openTab(event, 'Home')">
-          Home
-        </button>
-      </a>
-      <a href="about.html">
-        <button class="tablinks" onclick="openTab(event, 'About')">
-          About
-        </button>
-      </a>
-      <a href="albums.html">
-        <button class="tablinks" onclick="openTab(event, 'Albums')">
-          Albums
-        </button>
-      </a>
-      <a href="artists.html">
-        <button class="tablinks" onclick="openTab(event, 'Artists')">
-          Artists
-        </button>
-      </a>
-      <a href="groups.html">
-        <button class="tablinks" onclick="openTab(event, 'Groups')">
-          Groups
-        </button>
-      </a>
-      <a href="discussion.html">
-        <button class="tablinks" onclick="openTab(event, 'Discussion')">
-          Discussion
-        </button>
-      </a>
-    </div>
-  </header>
-  <main class="about-intro">
-    <section class="about-hero-card">
-      <p class="about-kicker">Discover Your Next Favorite Album</p>
-      <h2>Explore Albums Loved by the Community</h2>
-      <p>
-        Dive into a curated selection of albums that have captured the hearts of our community members.
-        Whether you're looking for timeless classics or hidden gems, our album section is your gateway to musical
-        discovery.
-        Explore, listen, and find your next favorite album today!
-      </p>
-    </section>
-    
-    <section class="about-hero-card">
-      <p class="about-kicker">Share Your Favorites</p>
-      <h2>Contribute to the Community's Album Collection</h2>
-      <p>
-        Have an album that you can't stop listening to? Share it with the community!
-        Our platform encourages users to recommend albums they love, fostering a vibrant exchange of musical tastes and
-        discoveries.
-        Join the conversation and help others find their next favorite album!
-      </p>
-    </section>
+        <h2>Contribute to the Community's Album Collection</h2>
+        <p>
+          Have an album that you can't stop listening to? Share it with the
+          community! Our platform encourages users to recommend albums they
+          love, fostering a vibrant exchange of musical tastes and discoveries.
+          Join the conversation and help others find their next favorite album!
+        </p>
+        <p class="about-kicker">Share Your Favorites</p>
+      </section>
 
-    <section class="about-team-intro">
-      <h2>Top Albums From the Community</h2>
-      <p>
-        Discover the top albums that are loved and recommended by our community!
-      </p>
-      <!-- Spotify Embed -->
-      <div style="display: flex; justify-content: center; margin-top: 2rem">
-        <iframe data-testid="embed-iframe" style="border-radius: 12px"
-          src="https://open.spotify.com/embed/album/3WzBIQmn2hrulLeTY9smkk?utm_source=generator" width="100%"
-          height="352" frameborder="0" allowfullscreen="" allow="
-          autoplay;
-          clipboard-write;
-          encrypted-media;
-          fullscreen;
-          picture-in-picture;
-        " loading="lazy"></iframe>
-      </div>
-      <div style="display: flex; justify-content: center; margin-top: 2rem">
-        <iframe data-testid="embed-iframe" style="border-radius: 12px"
-          src="https://open.spotify.com/embed/album/1xJHno7SmdVtZAtXbdbDZp?utm_source=generator" width="100%"
-          height="352" frameborder="0" allowfullscreen="" allow="
-          autoplay;
-          clipboard-write;
-          encrypted-media;
-          fullscreen;
-          picture-in-picture;
-        " loading="lazy"></iframe>
-      </div>
-      <div style="display: flex; justify-content: center; margin-top: 2rem">
-        <iframe data-testid="embed-iframe" style="border-radius: 12px"
-          src="https://open.spotify.com/embed/album/17FxTkMIOb6nzuewcCmTJc?utm_source=generator" width="100%"
-          height="352" frameborder="0" allowfullscreen="" allow="
-          autoplay;
-          clipboard-write;
-          encrypted-media;
-          fullscreen;
-          picture-in-picture;
-        " loading="lazy"></iframe>
-      </div>
-      <div style="display: flex; justify-content: center; margin-top: 2rem">
-        <iframe data-testid="embed-iframe" style="border-radius: 12px"
-          src="https://open.spotify.com/embed/album/74xmkJppCy5sEuGOLnkwrc?utm_source=generator" width="100%"
-          height="352" frameborder="0" allowfullscreen="" allow="
-          autoplay;
-          clipboard-write;
-          encrypted-media;
-          fullscreen;
-          picture-in-picture;
-        " loading="lazy"></iframe>
-      </div>
-      <div style="display: flex; justify-content: center; margin-top: 2rem">
-        <iframe data-testid="embed-iframe" style="border-radius:12px"
-          src="https://open.spotify.com/embed/album/3ZtwVDikRanGqN17IGpWgh?utm_source=generator" width="100%"
-          height="352" frameBorder="0" allowfullscreen=""
-          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-      </div>
-    </section>
-  </main>
-</body>
+      <div class="albums-card-container">
+        <div class="albums-container">
+          <section class="about-team-intro">
+            <h2>Top Albums From the Community</h2>
+            <p>
+              Discover the top albums that are loved and recommended by our
+              community!
+            </p>
+            <!-- Spotify Embed -->
+            <div class="song-card">
+              <iframe
+                data-testid="embed-iframe"
+                style="border-radius: 12px"
+                src="https://open.spotify.com/embed/album/3WzBIQmn2hrulLeTY9smkk?utm_source=generator"
+                width="100%"
+                height="352"
+                frameborder="0"
+                allowfullscreen=""
+                allow="
+                  autoplay;
+                  clipboard-write;
+                  encrypted-media;
+                  fullscreen;
+                  picture-in-picture;
+                "
+                loading="lazy"
+              ></iframe>
+            </div>
+            <div class="song-card">
+              <iframe
+                data-testid="embed-iframe"
+                style="border-radius: 12px"
+                src="https://open.spotify.com/embed/album/1xJHno7SmdVtZAtXbdbDZp?utm_source=generator"
+                width="100%"
+                height="352"
+                frameborder="0"
+                allowfullscreen=""
+                allow="
+                  autoplay;
+                  clipboard-write;
+                  encrypted-media;
+                  fullscreen;
+                  picture-in-picture;
+                "
+                loading="lazy"
+              ></iframe>
+            </div>
+            <div class="song-card">
+              <iframe
+                data-testid="embed-iframe"
+                style="border-radius: 12px"
+                src="https://open.spotify.com/embed/album/17FxTkMIOb6nzuewcCmTJc?utm_source=generator"
+                width="100%"
+                height="352"
+                frameborder="0"
+                allowfullscreen=""
+                allow="
+                  autoplay;
+                  clipboard-write;
+                  encrypted-media;
+                  fullscreen;
+                  picture-in-picture;
+                "
+                loading="lazy"
+              ></iframe>
+            </div>
+            <div class="song-card">
+              <iframe
+                data-testid="embed-iframe"
+                style="border-radius: 12px"
+                src="https://open.spotify.com/embed/album/74xmkJppCy5sEuGOLnkwrc?utm_source=generator"
+                width="100%"
+                height="352"
+                frameborder="0"
+                allowfullscreen=""
+                allow="
+                  autoplay;
+                  clipboard-write;
+                  encrypted-media;
+                  fullscreen;
+                  picture-in-picture;
+                "
+                loading="lazy"
+              ></iframe>
+            </div>
+            <div class="song-card">
+              <iframe
+                data-testid="embed-iframe"
+                style="border-radius: 12px"
+                src="https://open.spotify.com/embed/album/3ZtwVDikRanGqN17IGpWgh?utm_source=generator"
+                width="100%"
+                height="352"
+                frameborder="0"
+                allowfullscreen=""
+                allow="
+                  autoplay;
+                  clipboard-write;
+                  encrypted-media;
+                  fullscreen;
+                  picture-in-picture;
+                "
+                loading="lazy"
+              ></iframe>
+            </div>
+          </section>
+        </div>
 
+        <div class="albums-container">
+          <section class="about-team-intro">
+            <h2>Top BillBoard Songs</h2>
+            <p>See what songs are at the top of the chart</p>
+            <iframe
+              data-testid="embed-iframe"
+              style="border-radius: 12px"
+              src="https://open.spotify.com/embed/playlist/6UeSakyzhiEt4NB3UAd6NQ?utm_source=generator"
+              width="100%"
+              height="352"
+              frameborder="0"
+              allowfullscreen=""
+              allow="
+                autoplay;
+                clipboard-write;
+                encrypted-media;
+                fullscreen;
+                picture-in-picture;
+              "
+              loading="lazy"
+            ></iframe>
+          </section>
+
+          <section class="about-team-intro">
+            <h2>Most Streamed Songs on Spotify</h2>
+            <p>Curious about what people have on their playlists?</p>
+            <iframe
+              data-testid="embed-iframe"
+              style="border-radius: 12px"
+              src="https://open.spotify.com/embed/playlist/5ABHKGoOzxkaa28ttQV9sE?utm_source=generator"
+              width="100%"
+              height="352"
+              frameborder="0"
+              allowfullscreen=""
+              allow="
+                autoplay;
+                clipboard-write;
+                encrypted-media;
+                fullscreen;
+                picture-in-picture;
+              "
+              loading="lazy"
+            ></iframe>
+          </section>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>
