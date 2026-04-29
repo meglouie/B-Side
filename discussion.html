@@ -1,108 +1,109 @@
 <!doctype html>
 <html lang="en">
-    <head>
-      <link rel="preconnect" href="https://fonts.googleapis.com" />
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-      <link
-        href="https://fonts.googleapis.com/css2?family=Bpmf+Huninn&family=Inconsolata:wght@200..900&display=swap"
-        rel="stylesheet"
-      />
-      <link rel="stylesheet" href="styles.css" />
-      <script src="discussion.js"></script>
-    </head>
-    <body>
-      <header>
-        <h1>Discussion</h1>
-        <div class="tab">
-          <a href="home.html">
-            <button class="tablinks" onclick="openTab(event, 'Home')">
-              Home
-            </button>
-          </a>
-          <a href="about.html">
-            <button class="tablinks" onclick="openTab(event, 'About')">
-              About
-            </button>
-          </a>
-          <a href="albums.html">
-            <button class="tablinks" onclick="openTab(event, 'Albums')">
-              Albums
-            </button>
-          </a>
-          <a href="artists.html">
-            <button class="tablinks" onclick="openTab(event, 'Artists')">
-              Artists
-            </button>
-          </a>
-          <a href="groups.html">
-            <button class="tablinks" onclick="openTab(event, 'Groups')">
-              Groups
-            </button>
-          </a>
-          <a href="discussion.html">
-            <button class="tablinks" onclick="openTab(event, 'Discussion')">
-              Discussion
-            </button>
-          </a>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bpmf+Huninn&family=Inconsolata:wght@200..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="images/logo.png" />
+  </head>
+  <body>
+    <header>
+      <h1>Discussion</h1>
+      <div class="tab">
+        <a href="home.html">
+          <button class="tablinks" onclick="openTab(event, 'Home')">
+            Home
+          </button>
+        </a>
+        <a href="about.html">
+          <button class="tablinks" onclick="openTab(event, 'About')">
+            About
+          </button>
+        </a>
+        <a href="albums.html">
+          <button class="tablinks" onclick="openTab(event, 'Albums')">
+            Albums
+          </button>
+        </a>
+        <a href="artists.html">
+          <button class="tablinks" onclick="openTab(event, 'Artists')">
+            Artists
+          </button>
+        </a>
+        <a href="groups.html">
+          <button class="tablinks" onclick="openTab(event, 'Groups')">
+            Groups
+          </button>
+        </a>
+        <a href="discussion.html">
+          <button class="tablinks" onclick="openTab(event, 'Discussion')">
+            Discussion
+          </button>
+        </a>
+      </div>
+    </header>
+
+    <main class="about-intro">
+      <section class="about-hero-card">
+        <p class="about-kicker">Community Pulse</p>
+        <h2>Talk Music, Share Takes, Discover New Sounds</h2>
+        <p>
+          Start a thread, drop an album reaction, or ask for recommendations.
+          Use topic tags to organize your post and keep conversations flowing.
+        </p>
+      </section>
+
+      <section class="discussion-layout">
+        <div class="discussion-column">
+          <section class="discussion-card">
+            <h3>Create A Post</h3>
+            <div class="post-creator">
+              <input type="text" id="postTitle" placeholder="Title" />
+              <textarea
+                id="postBody"
+                placeholder="What's on your mind?"
+                maxlength="300"
+              ></textarea>
+              <div class="post-controls">
+                <select id="postTag" aria-label="Select topic">
+                  <option value="General">General</option>
+                  <option value="Album Talk">Album Talk</option>
+                  <option value="Artists">Artists</option>
+                  <option value="Recommendations">Recommendations</option>
+                </select>
+                <span id="charCounter">0 / 300</span>
+              </div>
+              <button id="submitPost" class="discussion-btn">Post</button>
+            </div>
+          </section>
+
+          <section class="discussion-card">
+            <div class="discussion-feed-header">
+              <h3>Recent Posts</h3>
+            </div>
+            <div id="postsList" class="posts-list"></div>
+          </section>
         </div>
-      </header>
 
-      <main class="about-intro">
-        <section class="about-hero-card">
-          <p class="about-kicker">Community Pulse</p>
-          <h2>Talk Music, Share Takes, Discover New Sounds</h2>
-          <p>
-            Start a thread, drop an album reaction, or ask for recommendations.
-            Use topic tags to organize your post and keep conversations flowing.
-          </p>
-        </section>
-
-        <section class="discussion-layout">
-          <div class="discussion-column">
-            <section class="discussion-card">
-              <h3>Create A Post</h3>
-              <div class="post-creator">
-                <input type="text" id="postTitle" placeholder="Title" />
-                <textarea
-                  id="postBody"
-                  placeholder="What's on your mind?"
-                  maxlength="300"
-                ></textarea>
-                <div class="post-controls">
-                  <select id="postTag" aria-label="Select topic">
-                    <option value="General">General</option>
-                    <option value="Album Talk">Album Talk</option>
-                    <option value="Artists">Artists</option>
-                    <option value="Recommendations">Recommendations</option>
-                  </select>
-                  <span id="charCounter">0 / 300</span>
-                </div>
-                <button id="submitPost" class="discussion-btn">Post</button>
-              </div>
-            </section>
-
-            <section class="discussion-card">
-              <div class="discussion-feed-header">
-                <h3>Recent Posts</h3>
-              </div>
-              <div id="postsList" class="posts-list"></div>
-            </section>
-          </div>
-
-          <aside class="discussion-column discussion-side-column">
-            <section class="discussion-card discussion-stats">
-              <h3>Today In B-Side</h3>
-              <div class="stat-row">
-                <span>Active Threads</span>
-                <strong id="threadCount">0</strong>
-              </div>
-              <div class="stat-row">
-                <span>Most Used Topic</span>
-                <strong id="topTopic">-</strong>
-              </div>
-            </section>
-          </aside>
-        </div>
-      </main>
-    </body>
+        <aside class="discussion-column discussion-side-column">
+          <section class="discussion-card discussion-stats">
+            <h3>Today In B-Side</h3>
+            <div class="stat-row">
+              <span>Active Threads</span>
+              <strong id="threadCount">0</strong>
+            </div>
+            <div class="stat-row">
+              <span>Most Used Topic</span>
+              <strong id="topTopic">-</strong>
+            </div>
+          </section>
+        </aside>
+      </section>
+    </main>
+  </body>
+  <script src="discussion.js"></script>
 </html>
