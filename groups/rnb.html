@@ -56,7 +56,80 @@
                 Use topic tags to organize your post and keep conversations flowing.
             </p>
         </section>
-        
 
+        <!-- Featured SZA Section -->
+        <section class="features">
+            <div class="content">
+                <div class="text">
+                    <h2>Featured R&B Artist: SZA</h2>
+                    <p>
+                        SZA's soulful voice and introspective lyrics have redefined modern R&B. From Ctrl's vulnerability to SOS's genre-blending hits, she's the voice of a generation. Share your favorite SZA track or album!
+                    </p>
+                </div>
+                <div class="image">
+                    <img src="../images/sza.png" alt="SZA" />
+                </div>
+            </div>
+        </section>
 
-        </div>
+        <!-- Featured Celine Wanyi Section -->
+        <section class="features">
+            <div class="content">
+                <div class="text">
+                    <h2>Featured R&B Artist: Celine Wanyi</h2>
+                    <p>
+                        Rising star Celine Wanyi brings fresh energy to R&B with smooth vocals and heartfelt stories. Her unique sound is captivating fans worldwide. What do you love about her music? Discuss below!
+                    </p>
+                </div>
+                <div class="image">
+                    <img src="../images/celinewanyi.jpg" alt="Celine Wanyi" />
+                </div>
+            </div>
+        </section>
+
+        <section class="discussion-layout">
+            <div class="discussion-column">
+                <section class="discussion-card">
+                    <h3>Create A Post</h3>
+                    <div class="post-creator">
+                        <input type="text" id="postTitle" placeholder="Title" />
+                        <textarea id="postBody" placeholder="What's on your mind?" maxlength="300"></textarea>
+                        <div class="post-controls">
+                            <select id="postTag" aria-label="Select topic">
+                                <option value="General">General</option>
+                                <option value="Album Talk">Album Talk</option>
+                                <option value="Artists">Artists</option>
+                                <option value="Recommendations">Recommendations</option>
+                            </select>
+                            <span id="charCounter">0 / 300</span>
+                        </div>
+                        <button id="submitPost" class="discussion-btn">Post</button>
+                    </div>
+                </section>
+
+                <section class="discussion-card">
+                    <div class="discussion-feed-header">
+                        <h3>Recent Posts</h3>
+                    </div>
+                    <div id="postsList" class="posts-list"></div>
+                </section>
+            </div>
+
+            <aside class="discussion-column discussion-side-column">
+                <section class="discussion-card discussion-stats">
+                    <h3>Today In B-Side</h3>
+                    <div class="stat-row">
+                        <span>Active Threads</span>
+                        <strong id="threadCount">0</strong>
+                    </div>
+                    <div class="stat-row">
+                        <span>Most Used Topic</span>
+                        <strong id="topTopic">-</strong>
+                    </div>
+                </section>
+            </aside>
+        </section>
+    </main>
+  </body>
+  <script src="groups.js"></script>
+</body>
