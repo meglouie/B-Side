@@ -25,6 +25,7 @@ B-Side is a music community platform where you can discover albums, connect with
    - **On Windows:** Open File Explorer, find `home.html`, right-click → "Open with" → choose your browser (Chrome, Firefox, Safari, or Edge)
    - **Alternative (all systems):** Drag `home.html` directly into your browser window
    - The site will load as a local file and you can navigate between pages using the navigation tabs
+   - If in the terminal and using windows type `start.html`
 2. Static site—no backend or dependencies to install
 
 **Tech Stack:**
