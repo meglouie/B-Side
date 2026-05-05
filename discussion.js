@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
     },
   ];
 
-  const posts = [...seedPosts];
+  let posts = [...seedPosts];
 
   function updateStats() {
     //update the number of posted posts for the side bar
@@ -81,7 +81,11 @@ document.addEventListener("DOMContentLoaded", () => {
       footer.className = "post-item-footer";
 
       const author = document.createElement("span");
+      author.className = "post-author";
       author.textContent = "by " + post.author;
+
+      const actions = document.createElement("div");
+      actions.className = "post-item-actions";
 
       //every click adds one like to the count
       const likeBtn = document.createElement("button");
@@ -92,8 +96,26 @@ document.addEventListener("DOMContentLoaded", () => {
         likeBtn.textContent = "Like " + post.likes;
       });
 
+      if (post.author == "You") {
+        const deleteBtn = document.createElement("button");
+        deleteBtn.className = "delete-btn";
+        deleteBtn.textContent = "Delete";
+        deleteBtn.addEventListener("click", () => {
+          //delete the post
+          posts = posts.filter((currentPost) => currentPost != post);
+
+          //runs everytime we submit a new post
+          updateStats();
+          renderPosts();
+        });
+
+        actions.appendChild(deleteBtn);
+      }
+
+      actions.appendChild(likeBtn);
+
       footer.appendChild(author);
-      footer.appendChild(likeBtn);
+      footer.appendChild(actions);
 
       article.appendChild(header);
       article.appendChild(body);
