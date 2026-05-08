@@ -1,13 +1,65 @@
+:root {
+  --color-bg: #c8d9e3;
+  --color-text: #2f4156;
+  --color-muted: #567c8d;
+
+  --color-primary: #2f4156;
+  --color-primary-contrast: #f5efeb;
+
+  --color-card: #f5efeb;
+  --color-surface: #ffffff;
+
+  --color-border: #2f4156;
+  --color-border-subtle: #b7cad5;
+
+  --color-tag-bg: #ffe1e6;
+  --color-tag-text: #2f4156;
+  --color-input-border: #567c8d;
+
+  --color-hr: #2f4156;
+  --color-delete: #a81936;
+  --color-delete-contrast: #f5efeb;
+
+  --shadow: rgba(47, 65, 86, 0.15);
+  --shadow-soft: rgba(47, 65, 86, 0.12);
+}
+
 body {
   font-family: Inconsolata, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #c8d9e3;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}
+
+body.darkmode {
+  --color-bg: #20304A;
+  --color-text: #E0D9E0;
+  --color-muted: #8E90A7;
+
+  --color-primary: #20304A;
+  --color-primary-contrast: #E0D9E0;
+
+  --color-card: #030512;
+  --color-surface: #030512;
+
+  --color-border: #505E79;
+  --color-border-subtle: #505E79;
+
+  --color-tag-bg: rgba(224, 217, 224, 0.12);
+  --color-tag-text: #E0D9E0;
+  --color-input-border: #8E90A7;
+
+  --color-hr: #8E90A7;
+  --color-delete-contrast: #E0D9E0;
+
+  --shadow: rgba(3, 5, 18, 0.45);
+  --shadow-soft: rgba(3, 5, 18, 0.35);
 }
 
 header {
-  background-color: #2f4156;
-  color: #f5efeb;
+  background-color: var(--color-primary);
+  color: var(--color-primary-contrast);
   padding: 5rem;
   text-align: center;
   font-size: x-large;
@@ -18,9 +70,12 @@ main {
   line-height: 1.6;
 }
 
+
 .home-container {
   text-align: center;
+  color: var(--color-text);
 }
+
 
 .home-container h2 {
   font-size: x-large;
@@ -34,18 +89,20 @@ main {
 }
 
 .about-hero-card {
-  background: linear-gradient(135deg, #f5efeb 0%, #ffe1e6 100%);
-  border: 2px solid #2f4156;
+  background: linear-gradient(135deg, var(--color-card) 0%, var(--color-tag-bg) 100%);
+  border: 2px solid var(--color-border);
+
   border-radius: 18px;
   padding: 1.5rem;
-  box-shadow: 0 8px 20px rgba(47, 65, 86, 0.15);
+  box-shadow: 0 8px 20px var(--shadow);
   margin-bottom: 2rem;
 }
 
 .about-kicker {
   margin: 0;
   font-family: "Bpmf Huninn", sans-serif;
-  color: #567c8d;
+  color: var(--color-muted);
+
   letter-spacing: 1px;
   text-transform: uppercase;
   font-size: 0.9rem;
@@ -54,7 +111,8 @@ main {
 .about-hero-card h2,
 .about-team-intro h2 {
   text-align: center;
-  color: #2f4156;
+  color: var(--color-text);
+
   margin-top: 0.6rem;
 }
 
@@ -145,7 +203,8 @@ hr {
   padding: 1rem 1.25rem;
   border-radius: 18px;
   padding: 1.5rem;
-  box-shadow: 0 8px 20px rgba(47, 65, 86, 0.15);
+  box-shadow: 0 8px 20px var(--shadow);
+
   border-radius: 12px;
 }
 
@@ -388,4 +447,21 @@ hr {
     flex-direction: column;
     align-items: stretch;
   }
+}
+
+.darkmode{
+  background-color: #20304A;
+  color: #E0D9E0;
+}
+
+.toggle-button{
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #2f4156;
+  color: #f5efeb;
+  border: none;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
 }

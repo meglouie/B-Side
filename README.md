@@ -41,10 +41,21 @@ B-Side is a music community platform where you can discover albums, connect with
 - `discussion.js` → Post creation logic
 - `groups/` → Genre group pages
 
-**Color Palette**
+**Features**
+- Light and Dark Mode
+   - Use toggle button to switch modes
+
+**Color Palette: Light Mode**
 
 - Navy Blue: #2F4156
 - Sky Blue: #C8D9E3
 - Azalea: #F7C9D4
 - Pale Pink: #FFE1E6
 - Beige: #F5EFEB
+
+**Color Palette: Dark Mode**
+- Bon Jour: #E0D9E0
+- Cool Grey: #8E90A7
+- Fiord: #505E79
+- Yankees Blue: #20304A
+- Cinder: #030512
