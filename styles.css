@@ -119,10 +119,12 @@ main {
 .about-team-intro {
   margin-top: 1.25rem;
   padding: 1rem 1.25rem;
-  background-color: #f5efeb;
-  border-left: 6px solid #567c8d;
+  background-color: var(--color-card);
+  border-left: 6px solid var(--color-muted);
   border-radius: 12px;
+  color: var(--color-text);
 }
+
 
 .tablinks {
   background-color: #ffe1e6;
@@ -166,10 +168,19 @@ main {
 }
 
 .text h2 {
-  color: #2f4156;
+  color: var(--color-text);
+}
+
+.text p {
+  color: var(--color-text);
+}
+
+.text {
+  color: var(--color-text);
 }
 
 .image {
+
   width: 50%;
   text-align: center;
 }
